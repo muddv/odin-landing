@@ -1,0 +1,1 @@
+In this project I attempt to create a rudementary landing page with skills I learned in Odin Project Foundations course.
