@@ -37,8 +37,32 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .icons {
     display: flex;
+    width: 150px;
+    height: 150px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}    
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.icons img {
+    border-radius: 25px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: lightblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
 }
