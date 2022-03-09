@@ -6,6 +6,11 @@ body {
     padding: 0;
 }
 
+html body > * {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
 .header, .first-section, .footer {
     background-color: #1F2937;
     color: white;
@@ -83,6 +88,7 @@ a {
 }
 
 .content-icons img {
+    /* this creates border with rounded corners around images */
     border-radius: 25px;
     border-width: 6px;
     border-style: solid;
