@@ -1,11 +1,12 @@
 body {
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     margin: 0; 
     padding: 0;
 }
 
-.header, .container1, .footer {
+.header, .first-section, .footer {
     background-color: #1F2937;
     color: white;
     padding: 10px;
@@ -16,21 +17,45 @@ a {
     text-decoration: none;
 }
 
-.header, .container1 {
+.header, .first-section {
     height: 72px;
-    display: flex;
-    justify-content: space-around;
     gap: 10px;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.container1 {
-    padding: 100px;
+.header {
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
-.container1.text {
+.first-section {
+    display: flex;
+    padding: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.text {
     display: flex;
     flex-direction: column;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+.text button {
+    padding: 1px;
+    max-width: 100px;
+}
+
+.text p {
+    width: 300px;
+}
+
+.first-section img {
+    display: flex;
+    margin-left: auto;
+    align-self: center;
 }
 
 .content {
@@ -40,7 +65,7 @@ a {
     flex-direction: column;
 }
 
-.icons {
+.content-icons {
     display: flex;
     width: 150px;
     height: 150px;
@@ -57,7 +82,7 @@ a {
     font-weight: lighter;
 }
 
-.icons img {
+.content-icons img {
     border-radius: 25px;
     border-width: 6px;
     border-style: solid;
