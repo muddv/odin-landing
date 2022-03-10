@@ -7,8 +7,8 @@ body {
 }
 
 html body > * {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .header, .first-section, .footer {
@@ -30,13 +30,30 @@ a {
 
 .header {
     display: flex;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.first-section h1 {
+    /* governs text for page title */
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+    margin-bottom: 0px;
+}
+
+.first-section p, .header a{
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: 0px;
 }
 
 .first-section {
     display: flex;
-    padding: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
     padding-top: 150px;
     padding-bottom: 150px;
 }
@@ -46,11 +63,14 @@ a {
     flex-direction: column;
     align-self: flex-end;
     justify-content: center;
+    margin: 0px;
 }
 
 .text button {
     padding: 1px;
     max-width: 100px;
+    background-color:#3882F6;
+    color:#F9FAF8;
 }
 
 .text p {
@@ -69,6 +89,12 @@ a {
     align-items: center;
     flex-direction: column;
     margin-bottom: 80px;
+}
+
+.content h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color:#1F2937;
 }
 
 .content-icons {
@@ -102,9 +128,12 @@ a {
 .second-section {
     background-color: #E5E7EB;
     font-size: 36px;
+    color: #1F2937;
+}
+
+.second-section .quote {
     font-weight: lighter;
     font-style: italic;
-    color: #1F2937;
 }
 
 .third-section {
@@ -141,10 +170,15 @@ a {
     margin: 0;
 }
 
-.call-to-action button {
+.call-to-action button, .text button {
     border: 2px solid #E5E7EB;
     border-radius: 12px;
     padding: 5px;
     background-color: #3882F6;
     color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
 }
